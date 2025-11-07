@@ -1,0 +1,20 @@
+{
+  "schema": [
+    "duration_min",
+    "distance_km",
+    "speed_mean",
+    "speed_q90",
+    "accel_q90",
+    "jerk_q90",
+    "sharp_freq_pm",
+    "load_q85",
+    "thr_q85",
+    "frac_rpm90",
+    "frac_maf90"
+  ],
+  "oof_stats": {
+    "oof_mae": 6.4057534539710845,
+    "oof_r2": 0.07499329150234413,
+    "oof_pear": -0.14537589120375385
+  }
+}
