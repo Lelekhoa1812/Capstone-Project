@@ -1,0 +1,5 @@
+curl -s "https://binkhoale1812-obd-logger.hf.space/efficiency/005_2025-10-27_processed.csv"
+{"detail":"Efficiency data not found for 005_2025-10-27_processed.csv"}
+
+curl -s "https://binkhoale1812-obd-logger.hf.space/efficiency/008_2025-10-27_processed.csv"
+{"drive_sessions":[{"timestamp_start":"2025-10-27T10:35:50.000000Z","timestamp_end":"2025-10-27T10:37:17.000000Z","average_speed_kmh":23.65,"total_distance_meters":1492.83,"total_fuel_liters":0.425,"efficiency_score":88.15072577356374}],"filename":"008_2025-10-27_processed.csv","efficiency_score":88.15072577356374,"timestamp":"2025-10-27T10:37:43.349027","status":"success"}

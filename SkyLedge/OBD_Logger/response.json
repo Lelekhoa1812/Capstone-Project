@@ -1,0 +1,90 @@
+{
+  "status": "success",
+  "processing_id": "2024-12-01T14-30-22",
+  "timestamp": "2024-12-01T14:30:22.123Z",
+  "file_info": {
+    "original_filename": "obd_data_20241201.csv",
+    "processed_filename": "cleaned_2024-12-01T14-30-22_efficiency.csv",
+    "rows_processed": 1250,
+    "duration_minutes": 15.5,
+    "distance_km": 12.3
+  },
+  "predictions": {
+    "driver_behavior": {
+      "labels": ["Normal", "Conservative", "Aggressive", "Normal", "Conservative"],
+      "count": 5,
+      "distribution": {
+        "Normal": 2,
+        "Conservative": 2, 
+        "Aggressive": 1
+      }
+    },
+    "fuel_efficiency": {
+      "score": 78.5,
+      "range": "0-100%",
+      "interpretation": "Good efficiency - smooth driving patterns detected"
+    }
+  },
+  "data_files": {
+    "cleaned_data": {
+      "path": "/download/cleaned_2024-12-01T14-30-22.csv",
+      "columns": ["timestamp", "SPEED", "RPM", "MAF", "ENGINE_LOAD", "THROTTLE_POS", "ACCEL", "JERK"]
+    },
+    "labeled_data": {
+      "path": "/download/cleaned_2024-12-01T14-30-22_labeled.csv", 
+      "columns": ["timestamp", "SPEED", "RPM", "MAF", "ENGINE_LOAD", "THROTTLE_POS", "driving_style"]
+    },
+    "efficiency_data": {
+      "path": "/download/cleaned_2024-12-01T14-30-22_efficiency.csv",
+      "columns": ["timestamp", "SPEED", "RPM", "MAF", "ENGINE_LOAD", "THROTTLE_POS", "driving_style", "fuel_efficiency"]
+    }
+  },
+  "visualizations": {
+    "correlation_plot": "/plots/corr_2024-12-01T14-30-22.png",
+    "trend_plot": "/plots/trend_2024-12-01T14-30-22.png"
+  },
+  "storage": {
+    "google_drive": {
+      "status": "uploaded",
+      "folder_id": "1ABC123DEF456GHI789",
+      "file_id": "1XYZ789ABC123DEF456"
+    },
+    "mongodb": {
+      "status": "saved",
+      "session_id": "session_2024-12-01T14-30-22",
+      "collection": "obd_data"
+    },
+    "firebase": {
+      "status": "saved",
+      "path": "skyledge/processed/2024-12-01T14-30-22.csv"
+    }
+  },
+  "model_status": {
+    "driver_behavior": {
+      "status": "ready",
+      "version": "v1.2",
+      "accuracy": 0.89
+    },
+    "fuel_efficiency": {
+      "status": "ready", 
+      "version": "v1.0",
+      "calibration_type": "quantile_mapping"
+    }
+  },
+  "api_endpoints": {
+    "download_cleaned": "GET /download/cleaned_2024-12-01T14-30-22.csv",
+    "download_labeled": "GET /download/cleaned_2024-12-01T14-30-22_labeled.csv", 
+    "download_efficiency": "GET /download/cleaned_2024-12-01T14-30-22_efficiency.csv",
+    "latest_predictions": "GET /predictions/latest",
+    "model_status": "GET /models/status",
+    "processing_events": "GET /events"
+  },
+  "processing_summary": {
+    "data_cleaning": "✅ KNN imputation applied, outliers handled",
+    "feature_engineering": "✅ Acceleration, jerk, and distance calculated", 
+    "driver_classification": "✅ 5 behavior segments classified",
+    "efficiency_scoring": "✅ Drive-level efficiency: 78.5%",
+    "storage": "✅ Saved to Google Drive, MongoDB, Firebase",
+    "visualization": "✅ Correlation and trend plots generated"
+  }
+}

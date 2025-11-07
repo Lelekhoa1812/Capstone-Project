@@ -1,0 +1,26 @@
+{
+    "timestamp": "2025-05-15T10:00:00",
+    "driving_style": "aggressive",
+    "data": {
+      "RPM": 3200,
+      "THROTTLE_POS": 75,
+      "SPEED": 110,
+      "FUEL_PRESSURE": 290,
+      "ENGINE_LOAD": 45,
+      "COOLANT_TEMP": 85,
+      "INTAKE_TEMP": 30,
+      "TIMING_ADVANCE": 10,
+      "MAF": 12.5,
+      "INTAKE_PRESSURE": 28,
+      "SHORT_FUEL_TRIM_1": 3.1,
+      "LONG_FUEL_TRIM_1": 6.2,
+      "SHORT_FUEL_TRIM_2": 2.5,
+      "LONG_FUEL_TRIM_2": 5.0,
+      "COMMANDED_EQUIV_RATIO": 1.0,
+      "O2_B1S2": 0.74,
+      "O2_B2S2": 0.68,
+      "O2_S1_WR_VOLTAGE": 0.85,
+      "COMMANDED_EGR": 10
+    }
+  }
+  
