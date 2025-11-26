@@ -1,0 +1,8 @@
+[
+  {
+    "origin": ["http://localhost:3000", "https://binkhoale1812-obd-logger.hf.space"],
+    "method": ["GET", "PUT", "POST", "DELETE", "HEAD"],
+    "responseHeader": ["Content-Type", "x-goog-meta-foo"],
+    "maxAgeSeconds": 3600
+  }
+]
